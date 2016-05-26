@@ -14,17 +14,9 @@ namespace Hash {
 #define A 76963
 #define B 86969
 
-    unsigned hashSum(string s) {
-        unsigned hashCode = 51;
-        for (int i = 0; i < s.length(); i++)
-            hashCode = (hashCode * A) ^ (s[i] * B);
-        return hashCode;
-    }
+    unsigned hashSum(string s);
 
-    bool checkHashCode(string s, unsigned code) {
-        unsigned sHashCode = hashSum(s);
-        return sHashCode == code;
-    }
+    bool checkHashCode(string s, unsigned code);
 }
 
 #endif //ASSIGNMENT_CPP_HASHSUM_HPP

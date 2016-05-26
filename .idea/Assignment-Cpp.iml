@@ -2,13 +2,24 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/MenuHelper.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Utils.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MenuHelper.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IOHelper.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Utils.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Account.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/json.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Account.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ModelBase.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HashSum.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AdminProcess.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/HashSum.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Account.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Account.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ModelBase.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GlobalVariants.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/readme.md" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GlobalVariants.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AdminProcess.hpp" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

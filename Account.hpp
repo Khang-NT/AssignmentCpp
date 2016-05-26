@@ -13,14 +13,19 @@ using namespace std;
 
 class Account : public ModelBase {
 public:
-    Account(string userName, string password, int type) : ModelBase(),
-                                                          userName(userName),
-                                                          passwordHash(password),
-                                                          type(type) {}
+    Account(const string userName, int passwordHash, int type) : ModelBase(),
+                                                                 userName(userName),
+                                                                 passwordHash(passwordHash),
+                                                                 type(type) {}
 
-    Account(const json &j) : Account(j[USER_NAME], j[PASSWORD], j[TYPE]) {}
+    Account(const string userName, string password, int type) :
+            Account(userName, Hash::hashSum(password), type) {}
 
-    json toJson();
+    Account(const json &j) : Account(j[USER_NAME], (int) j[PASSWORD], j[TYPE]) {}
+
+    json toJson() const;
+
+    bool isMatchWith(string userName, string password) const;
 
     const string &getUserName() const {
         return userName;
@@ -30,7 +35,7 @@ public:
         Account::userName = userName;
     }
 
-    const string &getPasswordHash() const {
+    const int &getPasswordHash() const {
         return passwordHash;
     }
 
@@ -40,6 +45,17 @@ public:
 
     int getType() const {
         return type;
+    }
+
+    string getTypeStr() const {
+        switch (type) {
+            case TYPE_ADMIN:
+                return "ADMIN";
+            case TYPE_MANAGER:
+                return "MANAGER";
+            default:
+                return "CUSTOMER";
+        }
     }
 
     void setType(int type) {
@@ -53,7 +69,8 @@ public:
     static const char *USER_NAME;
     static const char *PASSWORD;
 private:
-    string userName, passwordHash;
+    string userName;
+    int passwordHash;
     int type;
 };
 
