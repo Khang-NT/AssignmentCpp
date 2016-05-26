@@ -13,9 +13,13 @@
 ###Account permissions
 * Administrator:
   * Create another admin account
-  * Bla bla
+  * Open manager account
+  * Remove account
+  * Open manager control panel
 * Manager:
-  * Manage items, customer require,...
-  * Bla bla
+  * Add, remove, modify (price, number) products
+  * Manage orders (update status)
+  * See simple report
 * Customer:
-  * Bla bla
+  * Orders product
+  * Track orders status
