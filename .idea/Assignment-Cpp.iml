@@ -5,8 +5,9 @@
       <sourceFolder url="file://$MODULE_DIR$/IOHelper.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ModelBase.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/IOHelper.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HashSum.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Account.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Account.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ModelBase.hpp" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />

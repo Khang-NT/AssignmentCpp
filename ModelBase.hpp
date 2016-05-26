@@ -11,7 +11,9 @@ using json = nlohmann::json;
 
 class ModelBase {
 public:
-    ModelBase(json j) { };
+    ModelBase() {};
+
+    ModelBase(json j) : ModelBase() {};
 
     virtual json toJson() {
         return {};
